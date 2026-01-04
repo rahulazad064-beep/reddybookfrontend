@@ -1,0 +1,43 @@
+.live-underline {
+  position: absolute;
+  bottom: -4px;
+  height: 2px;
+  background-color: #22c55e;
+  animation: liveFlow 2.4s infinite ease-in-out;
+}
+
+/*
+  left + width are animated together
+  so the line "travels" instead of restarting
+*/
+@keyframes liveFlow {
+  /* start: nothing */
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  /* grow left → right */
+  25% {
+    left: 0%;
+    width: 100%;
+  }
+
+  /* shrink left → right (right edge fixed) */
+  50% {
+    left: 100%;
+    width: 0%;
+  }
+
+  /* grow right → left */
+  75% {
+    left: 0%;
+    width: 100%;
+  }
+
+  /* shrink right → left */
+  100% {
+    left: 0%;
+    width: 0%;
+  }
+}
