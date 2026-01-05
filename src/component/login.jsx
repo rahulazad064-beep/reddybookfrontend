@@ -55,7 +55,7 @@ export default function LoginModal({ onClose }) {
 
                     {/* Username */}
                     <div className="mb-4">
-                        <label className="text-sm block mb-1">
+                        <label className="md:text-sm text-xs block mb-1 ">
                             USERNAME / MOBILE NUMBER
                         </label>
                         <input
@@ -68,7 +68,7 @@ export default function LoginModal({ onClose }) {
 
                     {/* Password */}
                     <div className="mb-3">
-                        <label className="text-sm block mb-1">PASSWORD</label>
+                        <label className="md:text-sm text-xs block mb-1">PASSWORD</label>
                         <input
                             type="password"
                             value={password}
@@ -78,7 +78,7 @@ export default function LoginModal({ onClose }) {
                     </div>
 
                     {/* Remember / Forgot */}
-                    <div className="flex items-center justify-between text-sm mb-4">
+                    <div className="flex items-center justify-between md:text-sm text-xs mb-4">
                         <label className="flex items-center gap-2 cursor-pointer">
                             <input type="checkbox" className="accent-white" />
                             Remember Me?
@@ -91,12 +91,12 @@ export default function LoginModal({ onClose }) {
                     {/* Login Button */}
                     <button
                         onClick={handleLogin}
-                        className="w-full bg-white text-black font-semibold py-2 rounded-full mb-3">
+                        className="w-full bg-white text-black font-semibold py-2 rounded-sm border border-[#8b0015] mb-3">
                         LOG IN
                     </button>
 
                     {/* Demo Login */}
-                    <button className="w-full border border-white text-white font-semibold py-2 rounded-full mb-3">
+                    <button className="w-full border border-white text-white font-semibold py-2 rounded-sm border border-[#8b0015] mb-3">
                         LOGIN WITH DEMO ID
                     </button>
 
