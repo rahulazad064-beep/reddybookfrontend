@@ -40,7 +40,7 @@ export default function LoginModal({ onClose }) {
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
             {/* Modal Container */}
-            <div className="relative w-[63%] max-w-5xl h-[90vh] bg-white rounded-lg overflow-hidden shadow-2xl flex">
+            <div className="relative md:w-[63%] w-[92%] max-w-5xl h-[90vh] bg-white rounded-lg overflow-hidden shadow-2xl flex">
                 <button
                     onClick={onClose}
                     className="absolute top-4 right-4 text-white text-[10px] font-bold z-[200]"
