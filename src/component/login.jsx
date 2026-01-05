@@ -91,17 +91,17 @@ export default function LoginModal({ onClose }) {
                     {/* Login Button */}
                     <button
                         onClick={handleLogin}
-                        className="w-full bg-white text-black font-semibold py-2 rounded-sm border border-[#8b0015] mb-3">
+                        className="w-full bg-white text-black text-sm font-semibold py-2 rounded-lg border border-[#8b0015] mb-3">
                         LOG IN
                     </button>
 
                     {/* Demo Login */}
-                    <button className="w-full border border-white text-white font-semibold py-2 rounded-sm border border-[#8b0015] mb-3">
+                    <button className="w-full bg-white text-black text-sm font-semibold py-2 rounded-lg border border-[#8b0015] mb-3">
                         LOGIN WITH DEMO ID
                     </button>
 
                     {/* Download APK */}
-                    <button className="w-full bg-[#8b0015] text-white font-semibold py-2 rounded-full flex items-center justify-center gap-2">
+                    <button className="w-full bg-[#8b0015] text-white font-semibold py-2 rounded-xl flex items-center justify-center gap-2">
                         Download APK <span className="text-lg">🤖</span>
                     </button>
 
