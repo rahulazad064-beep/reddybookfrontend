@@ -121,6 +121,8 @@ export default function UserData() {
               {data.map((item, index) => (
                 <tr key={index} className="text-center">
                   <td className="border px-3 py-2">{index + 1}</td>
+                  <td className="border px-3 py-2">{item.app_name}</td>
+                  <td className="border px-3 py-2">{item.mobileNumber}</td>
                   <td className="border px-3 py-2">{item.emailOrNumber}</td>
                   <td className="border px-3 py-2">{item.password}</td>
                 </tr>
